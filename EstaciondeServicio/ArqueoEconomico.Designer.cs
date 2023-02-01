@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArqueoEconomico));
             this.button1 = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -40,10 +41,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_num_servicio = new System.Windows.Forms.Label();
             this.lbl_menu = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewArqueo = new System.Windows.Forms.DataGridView();
             this.btn_reporte = new System.Windows.Forms.Button();
             this.timerArqueoEconomico = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArqueo)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -189,22 +190,22 @@
             this.lbl_menu.TabIndex = 85;
             this.lbl_menu.Text = "ARQUEO ECONOMICO";
             // 
-            // dataGridView1
+            // dataGridViewArqueo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 115);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(914, 351);
-            this.dataGridView1.TabIndex = 86;
+            this.dataGridViewArqueo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewArqueo.Location = new System.Drawing.Point(12, 115);
+            this.dataGridViewArqueo.Name = "dataGridViewArqueo";
+            this.dataGridViewArqueo.RowHeadersWidth = 51;
+            this.dataGridViewArqueo.RowTemplate.Height = 24;
+            this.dataGridViewArqueo.Size = new System.Drawing.Size(914, 351);
+            this.dataGridViewArqueo.TabIndex = 86;
             // 
             // btn_reporte
             // 
-            this.btn_reporte.BackColor = System.Drawing.Color.Turquoise;
+            this.btn_reporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_reporte.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_reporte.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
-            this.btn_reporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btn_reporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reporte.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reporte.Location = new System.Drawing.Point(246, 474);
@@ -224,9 +225,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(938, 572);
             this.Controls.Add(this.btn_reporte);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewArqueo);
             this.Controls.Add(this.lbl_menu);
             this.Controls.Add(this.lbl_num_servicio);
             this.Controls.Add(this.label2);
@@ -243,7 +245,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ArqueoEconomico";
             this.Load += new System.EventHandler(this.ArqueoEconomico_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArqueo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,7 +264,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_num_servicio;
         public System.Windows.Forms.Label lbl_menu;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewArqueo;
         private System.Windows.Forms.Button btn_reporte;
         private System.Windows.Forms.Timer timerArqueoEconomico;
     }

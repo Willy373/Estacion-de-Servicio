@@ -24,6 +24,7 @@ namespace EstaciondeServicio
             timerArqueoEconomico.Enabled = true;
             lbl_combustible.Text = logSQL.consultaCombustible(lbl_usuario.Text);
             lbl_num_servicio.Text = logSQL.consultaNumeroPunto(lbl_usuario.Text);
+            dataGridViewArqueo.DataSource = logSQL.consultaArqueoEconomico(lbl_usuario.Text, lbl_num_servicio.Text);
         }
 
         private void btn_salir_Click(object sender, EventArgs e)

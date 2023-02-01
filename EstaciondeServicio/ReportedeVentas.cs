@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace EstaciondeServicio
         {
             InitializeComponent();
         }
+        LogicaSQL logSQL = new LogicaSQL();
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -44,6 +46,23 @@ namespace EstaciondeServicio
         private void ReportedeVentas_Load(object sender, EventArgs e)
         {
             timerReporteVentas.Enabled = true;
+            dataGridViewVentas.DataSource = logSQL.consultaVenta_Forma_Gral();
+        }
+
+        private void combo_vendedor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void combo_mes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            dataGridViewVentas.DataSource = logSQL.consultaVentaEspecifica(combo_vendedor.Text, combo_mes.Text);
+
         }
     }
 }

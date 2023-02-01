@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportedeVentas));
             this.button1 = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -42,11 +43,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.combo_mes = new System.Windows.Forms.ComboBox();
             this.btn_buscar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewVentas = new System.Windows.Forms.DataGridView();
             this.btn_reporte = new System.Windows.Forms.Button();
             this.lbl_menu = new System.Windows.Forms.Label();
             this.timerReporteVentas = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVentas)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -156,8 +157,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(22, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 26);
@@ -168,16 +170,27 @@
             // 
             this.combo_vendedor.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo_vendedor.FormattingEnabled = true;
+            this.combo_vendedor.Items.AddRange(new object[] {
+            "TODOS",
+            "admin",
+            "pepito",
+            "carolina",
+            "jose carlos",
+            "daniel",
+            "john",
+            "kevin"});
             this.combo_vendedor.Location = new System.Drawing.Point(147, 136);
             this.combo_vendedor.Name = "combo_vendedor";
             this.combo_vendedor.Size = new System.Drawing.Size(175, 34);
             this.combo_vendedor.TabIndex = 89;
+            this.combo_vendedor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.combo_vendedor_KeyPress);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(350, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 26);
@@ -190,6 +203,7 @@
             this.combo_mes.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo_mes.FormattingEnabled = true;
             this.combo_mes.Items.AddRange(new object[] {
+            "TODOS",
             "ENERO",
             "FEBRERO",
             "MARZO",
@@ -206,13 +220,14 @@
             this.combo_mes.Name = "combo_mes";
             this.combo_mes.Size = new System.Drawing.Size(175, 34);
             this.combo_mes.TabIndex = 91;
+            this.combo_mes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.combo_mes_KeyPress);
             // 
             // btn_buscar
             // 
-            this.btn_buscar.BackColor = System.Drawing.Color.Turquoise;
+            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_buscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_buscar.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
-            this.btn_buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btn_buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_buscar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buscar.Location = new System.Drawing.Point(616, 133);
@@ -222,23 +237,24 @@
             this.btn_buscar.TabIndex = 92;
             this.btn_buscar.Text = "BUSCAR";
             this.btn_buscar.UseVisualStyleBackColor = false;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
-            // dataGridView1
+            // dataGridViewVentas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 194);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(877, 241);
-            this.dataGridView1.TabIndex = 93;
+            this.dataGridViewVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewVentas.Location = new System.Drawing.Point(27, 194);
+            this.dataGridViewVentas.Name = "dataGridViewVentas";
+            this.dataGridViewVentas.RowHeadersWidth = 51;
+            this.dataGridViewVentas.RowTemplate.Height = 24;
+            this.dataGridViewVentas.Size = new System.Drawing.Size(877, 241);
+            this.dataGridViewVentas.TabIndex = 93;
             // 
             // btn_reporte
             // 
-            this.btn_reporte.BackColor = System.Drawing.Color.Turquoise;
+            this.btn_reporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_reporte.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_reporte.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
-            this.btn_reporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btn_reporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reporte.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reporte.Location = new System.Drawing.Point(261, 449);
@@ -256,7 +272,7 @@
             this.lbl_menu.BackColor = System.Drawing.Color.Transparent;
             this.lbl_menu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lbl_menu.Font = new System.Drawing.Font("Cambria", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_menu.ForeColor = System.Drawing.Color.White;
+            this.lbl_menu.ForeColor = System.Drawing.Color.Black;
             this.lbl_menu.Location = new System.Drawing.Point(160, 44);
             this.lbl_menu.Name = "lbl_menu";
             this.lbl_menu.Size = new System.Drawing.Size(643, 70);
@@ -272,10 +288,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(916, 545);
             this.Controls.Add(this.lbl_menu);
             this.Controls.Add(this.btn_reporte);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewVentas);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.combo_mes);
             this.Controls.Add(this.label4);
@@ -294,7 +312,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReportedeVentas";
             this.Load += new System.EventHandler(this.ReportedeVentas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVentas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,7 +333,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox combo_mes;
         private System.Windows.Forms.Button btn_buscar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewVentas;
         private System.Windows.Forms.Button btn_reporte;
         public System.Windows.Forms.Label lbl_menu;
         private System.Windows.Forms.Timer timerReporteVentas;

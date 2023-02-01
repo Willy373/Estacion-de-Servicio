@@ -44,7 +44,7 @@
             // 
             // groupBox_login
             // 
-            this.groupBox_login.BackColor = System.Drawing.Color.MintCream;
+            this.groupBox_login.BackColor = System.Drawing.Color.DarkTurquoise;
             this.groupBox_login.Controls.Add(this.lbl_inicio);
             this.groupBox_login.Controls.Add(this.pictureBox1);
             this.groupBox_login.Controls.Add(this.txt_contrasena);
@@ -93,10 +93,10 @@
             // 
             // btn_login
             // 
-            this.btn_login.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
-            this.btn_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_login.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.Location = new System.Drawing.Point(128, 377);

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuarios));
             this.button1 = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -38,18 +39,18 @@
             this.lbl_usuario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_menu = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewUsuarios = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btn_reporte = new System.Windows.Forms.Button();
+            this.btn_actualizar_usuario = new System.Windows.Forms.Button();
             this.timerUsuarios = new System.Windows.Forms.Timer(this.components);
             this.combo_estacion = new System.Windows.Forms.ComboBox();
             this.txt_nom_usuario = new System.Windows.Forms.TextBox();
             this.txt_contraseña = new System.Windows.Forms.TextBox();
             this.txt_combustible = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -162,26 +163,28 @@
             this.lbl_menu.BackColor = System.Drawing.Color.Transparent;
             this.lbl_menu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lbl_menu.Font = new System.Drawing.Font("Cambria", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_menu.ForeColor = System.Drawing.Color.White;
+            this.lbl_menu.ForeColor = System.Drawing.Color.Black;
             this.lbl_menu.Location = new System.Drawing.Point(313, 42);
             this.lbl_menu.Name = "lbl_menu";
             this.lbl_menu.Size = new System.Drawing.Size(313, 70);
             this.lbl_menu.TabIndex = 88;
             this.lbl_menu.Text = "USUARIOS";
             // 
-            // dataGridView1
+            // dataGridViewUsuarios
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 118);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(560, 344);
-            this.dataGridView1.TabIndex = 89;
+            this.dataGridViewUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewUsuarios.Location = new System.Drawing.Point(17, 118);
+            this.dataGridViewUsuarios.Name = "dataGridViewUsuarios";
+            this.dataGridViewUsuarios.RowHeadersWidth = 51;
+            this.dataGridViewUsuarios.RowTemplate.Height = 24;
+            this.dataGridViewUsuarios.Size = new System.Drawing.Size(560, 344);
+            this.dataGridViewUsuarios.TabIndex = 89;
+            this.dataGridViewUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUsuarios_CellClick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(583, 237);
             this.label2.Name = "label2";
@@ -192,6 +195,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(583, 290);
             this.label4.Name = "label4";
@@ -202,6 +206,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(584, 405);
             this.label5.Name = "label5";
@@ -212,6 +217,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(583, 351);
             this.label7.Name = "label7";
@@ -219,21 +225,22 @@
             this.label7.TabIndex = 93;
             this.label7.Text = "Nro Estación:";
             // 
-            // btn_reporte
+            // btn_actualizar_usuario
             // 
-            this.btn_reporte.BackColor = System.Drawing.Color.Turquoise;
-            this.btn_reporte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_reporte.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
-            this.btn_reporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            this.btn_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_reporte.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reporte.Location = new System.Drawing.Point(288, 478);
-            this.btn_reporte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_reporte.Name = "btn_reporte";
-            this.btn_reporte.Size = new System.Drawing.Size(371, 44);
-            this.btn_reporte.TabIndex = 96;
-            this.btn_reporte.Text = "ACTUALIZAR USUARIO";
-            this.btn_reporte.UseVisualStyleBackColor = false;
+            this.btn_actualizar_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_actualizar_usuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_actualizar_usuario.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
+            this.btn_actualizar_usuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_actualizar_usuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_actualizar_usuario.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_actualizar_usuario.Location = new System.Drawing.Point(288, 478);
+            this.btn_actualizar_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_actualizar_usuario.Name = "btn_actualizar_usuario";
+            this.btn_actualizar_usuario.Size = new System.Drawing.Size(371, 44);
+            this.btn_actualizar_usuario.TabIndex = 96;
+            this.btn_actualizar_usuario.Text = "ACTUALIZAR USUARIO";
+            this.btn_actualizar_usuario.UseVisualStyleBackColor = false;
+            this.btn_actualizar_usuario.Click += new System.EventHandler(this.btn_actualizar_usuario_Click);
             // 
             // timerUsuarios
             // 
@@ -241,15 +248,24 @@
             // 
             // combo_estacion
             // 
+            this.combo_estacion.Enabled = false;
             this.combo_estacion.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo_estacion.FormattingEnabled = true;
+            this.combo_estacion.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.combo_estacion.Location = new System.Drawing.Point(732, 348);
             this.combo_estacion.Name = "combo_estacion";
             this.combo_estacion.Size = new System.Drawing.Size(181, 34);
             this.combo_estacion.TabIndex = 101;
+            this.combo_estacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.combo_estacion_KeyPress);
             // 
             // txt_nom_usuario
             // 
+            this.txt_nom_usuario.Enabled = false;
             this.txt_nom_usuario.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nom_usuario.Location = new System.Drawing.Point(732, 234);
             this.txt_nom_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -259,6 +275,7 @@
             // 
             // txt_contraseña
             // 
+            this.txt_contraseña.Enabled = false;
             this.txt_contraseña.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_contraseña.Location = new System.Drawing.Point(733, 287);
             this.txt_contraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -268,6 +285,7 @@
             // 
             // txt_combustible
             // 
+            this.txt_combustible.Enabled = false;
             this.txt_combustible.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_combustible.Location = new System.Drawing.Point(732, 402);
             this.txt_combustible.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -280,17 +298,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(930, 578);
             this.Controls.Add(this.txt_combustible);
             this.Controls.Add(this.txt_contraseña);
             this.Controls.Add(this.txt_nom_usuario);
             this.Controls.Add(this.combo_estacion);
-            this.Controls.Add(this.btn_reporte);
+            this.Controls.Add(this.btn_actualizar_usuario);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewUsuarios);
             this.Controls.Add(this.lbl_menu);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_usuario);
@@ -305,7 +325,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuarios";
             this.Load += new System.EventHandler(this.Usuarios_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,12 +342,12 @@
         public System.Windows.Forms.Label lbl_usuario;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label lbl_menu;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewUsuarios;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btn_reporte;
+        private System.Windows.Forms.Button btn_actualizar_usuario;
         private System.Windows.Forms.Timer timerUsuarios;
         private System.Windows.Forms.ComboBox combo_estacion;
         private System.Windows.Forms.TextBox txt_nom_usuario;

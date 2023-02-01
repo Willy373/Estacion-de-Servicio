@@ -64,10 +64,10 @@
             // 
             // btn_reporte_grafica
             // 
-            this.btn_reporte_grafica.BackColor = System.Drawing.Color.Turquoise;
+            this.btn_reporte_grafica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_reporte_grafica.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_reporte_grafica.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
-            this.btn_reporte_grafica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btn_reporte_grafica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_reporte_grafica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reporte_grafica.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reporte_grafica.Location = new System.Drawing.Point(464, 377);
@@ -119,10 +119,10 @@
             // 
             // btn_reporte_venta
             // 
-            this.btn_reporte_venta.BackColor = System.Drawing.Color.Turquoise;
+            this.btn_reporte_venta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_reporte_venta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_reporte_venta.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
-            this.btn_reporte_venta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btn_reporte_venta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_reporte_venta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reporte_venta.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reporte_venta.Location = new System.Drawing.Point(700, 377);
@@ -136,10 +136,10 @@
             // 
             // btn_punto_venta
             // 
-            this.btn_punto_venta.BackColor = System.Drawing.Color.Turquoise;
+            this.btn_punto_venta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_punto_venta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_punto_venta.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
-            this.btn_punto_venta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btn_punto_venta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_punto_venta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_punto_venta.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_punto_venta.Location = new System.Drawing.Point(19, 377);
@@ -153,10 +153,10 @@
             // 
             // btn_arqueo
             // 
-            this.btn_arqueo.BackColor = System.Drawing.Color.Turquoise;
+            this.btn_arqueo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_arqueo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_arqueo.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
-            this.btn_arqueo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btn_arqueo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_arqueo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_arqueo.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_arqueo.Location = new System.Drawing.Point(242, 377);
@@ -374,7 +374,7 @@
             // 
             // btn_reporte_usuario
             // 
-            this.btn_reporte_usuario.BackColor = System.Drawing.Color.Turquoise;
+            this.btn_reporte_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_reporte_usuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_reporte_usuario.FlatAppearance.BorderColor = System.Drawing.Color.Turquoise;
             this.btn_reporte_usuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -406,7 +406,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1135, 480);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btn_reporte_usuario);
