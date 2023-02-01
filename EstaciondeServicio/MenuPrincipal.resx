@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pbox_historia_clinica.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbox_reporte_grafica.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        1AAADdQB75G6FQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACSGSURBVHhe7d1/
+        0wAADdMBvdUcagAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACSGSURBVHhe7d1/
         rPZnfdDxthZJKEtj2HDNmo3BNuiE0gGNEEHKDwEZBEZldYAbDgMN0wAKyRLjltFBTVRYpgRmJl0WO6dR
         oqE47HQOnZFozFCKLq4ycBJ1MGv8BRuD4+fqzt3rfs75PH3Ofc7nfs71vb6vP14JXOec+/7e3+v6ns97
         6/OUKw4ODgCAlUkXAYC5pYsAwNzSRQBgbukiADC3dBEAmFu6CADMLV0EAOaWLgIAc0sXAYC5pYsAwNzS
@@ -281,10 +281,10 @@
         gg==
 </value>
   </data>
-  <data name="pbox_reporte.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbox_arqueo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAI8/SURBVHhe7d0H
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAI8/SURBVHhe7d0H
         dBRV9wBw0ntCeggEQkgoofcWeocQelERQUEFFBREUERAQESkSJUuvajYsYuigKIoIEiT3nvH+v/u/90J
         Ie0meVN2d2b33nN+53zHj8ybNzv73t2ZVwpxcBQQbkJFYZAwV/hSOCRcEv4U/hOuCMeF7cJy4XmhqeAn
         cHBYNYKFVGGcsFb4VTgp4P0Owi3hgnBA+ESYLjwiJAocHBwclgx3obmwTMAGDhs7LTBBwIThYQEbUw4O
@@ -899,10 +899,10 @@
         /T91b+VE60Re1wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pbox_usuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbox_reporte_venta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHAYSURBVHhe7d0J
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHAYSURBVHhe7d0J
         tFxVnf79zs08z2SAzCFzQkIIQ+ZEQFFAQEEmmWQGFcV5aCMIKgqCoKIoisyTA5MoqKggKqPgBAhC2lZb
         tBWVftd/vd3vfutc/pfehm+S/dQ5VXVO1fNb67MSJXlO/fbZ5/wq99at+heXy+VyuVwul8vlcrlcLpfL
         5XK5XC6Xy+VyuVwul8vlcrlcLpfL5XK5XC6Xy+VyuVwul8vlcrlcla6FNRfU/KzmHzXBzMwMZDMimxXn
@@ -1387,7 +1387,7 @@
   <data name="pbox_cita.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEgfSURBVHhe7Z0H
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEgfSURBVHhe7Z0H
         nBTl3YAv8e4Qe4Hda7DlekXpIEoTkK6xYIxiN/YeMRoRa4zEXmKPBVvsGkVUVGLBAFYsqNgBxRhTNDH5
         or7fvHtzirt/2NmZ2Sm7z/P7Pb98X8K+M7u3886zu1NKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALznR+XR2raySPzn
@@ -1701,7 +1701,7 @@
   <metadata name="timerMenuPrincipal.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbox_reporte_usuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAP+iSURBVHhe7J0FfBVX2ofbUu/u1/Xtdrv1UqhR95YW

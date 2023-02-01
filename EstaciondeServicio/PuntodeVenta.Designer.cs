@@ -53,7 +53,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lbl_limite_combus = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.btn_combus = new System.Windows.Forms.Button();
+            this.btn_tanque = new System.Windows.Forms.Button();
+            this.btn_combustible = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timerPuntoVenta
@@ -66,7 +67,7 @@
             this.lbl_usuario.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.lbl_usuario.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_usuario.ForeColor = System.Drawing.Color.Black;
-            this.lbl_usuario.Location = new System.Drawing.Point(94, 455);
+            this.lbl_usuario.Location = new System.Drawing.Point(96, 456);
             this.lbl_usuario.Name = "lbl_usuario";
             this.lbl_usuario.Size = new System.Drawing.Size(38, 23);
             this.lbl_usuario.TabIndex = 76;
@@ -105,7 +106,7 @@
             this.lbl_fechor_actual.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.lbl_fechor_actual.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_fechor_actual.ForeColor = System.Drawing.Color.Black;
-            this.lbl_fechor_actual.Location = new System.Drawing.Point(745, 455);
+            this.lbl_fechor_actual.Location = new System.Drawing.Point(746, 455);
             this.lbl_fechor_actual.Name = "lbl_fechor_actual";
             this.lbl_fechor_actual.Size = new System.Drawing.Size(38, 23);
             this.lbl_fechor_actual.TabIndex = 73;
@@ -331,13 +332,25 @@
             this.label12.TabIndex = 97;
             this.label12.Text = "litros";
             // 
-            // btn_combus
+            // btn_tanque
             // 
-            this.btn_combus.Location = new System.Drawing.Point(46, 133);
-            this.btn_combus.Name = "btn_combus";
-            this.btn_combus.Size = new System.Drawing.Size(244, 290);
-            this.btn_combus.TabIndex = 98;
-            this.btn_combus.UseVisualStyleBackColor = true;
+            this.btn_tanque.BackColor = System.Drawing.SystemColors.Info;
+            this.btn_tanque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_tanque.Location = new System.Drawing.Point(33, 131);
+            this.btn_tanque.Name = "btn_tanque";
+            this.btn_tanque.Size = new System.Drawing.Size(244, 290);
+            this.btn_tanque.TabIndex = 98;
+            this.btn_tanque.UseVisualStyleBackColor = false;
+            // 
+            // btn_combustible
+            // 
+            this.btn_combustible.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btn_combustible.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_combustible.Location = new System.Drawing.Point(33, 131);
+            this.btn_combustible.Name = "btn_combustible";
+            this.btn_combustible.Size = new System.Drawing.Size(243, 287);
+            this.btn_combustible.TabIndex = 99;
+            this.btn_combustible.UseVisualStyleBackColor = false;
             // 
             // PuntodeVenta
             // 
@@ -345,7 +358,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(994, 486);
-            this.Controls.Add(this.btn_combus);
+            this.Controls.Add(this.btn_combustible);
+            this.Controls.Add(this.btn_tanque);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lbl_limite_combus);
             this.Controls.Add(this.label10);
@@ -405,6 +419,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lbl_limite_combus;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button btn_combus;
+        private System.Windows.Forms.Button btn_tanque;
+        private System.Windows.Forms.Button btn_combustible;
     }
 }

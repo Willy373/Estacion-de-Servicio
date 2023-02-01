@@ -32,14 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.btn_reporte_grafica = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.pbox_historia_clinica = new System.Windows.Forms.PictureBox();
+            this.pbox_reporte_grafica = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_reporte_venta = new System.Windows.Forms.Button();
             this.btn_punto_venta = new System.Windows.Forms.Button();
             this.btn_arqueo = new System.Windows.Forms.Button();
-            this.pbox_reporte = new System.Windows.Forms.PictureBox();
+            this.pbox_arqueo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pbox_usuario = new System.Windows.Forms.PictureBox();
+            this.pbox_reporte_venta = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_menu = new System.Windows.Forms.Label();
             this.pbox_cita = new System.Windows.Forms.PictureBox();
@@ -52,14 +52,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lbl_usuario = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbox_reporte_usuario = new System.Windows.Forms.PictureBox();
             this.btn_reporte_usuario = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_historia_clinica)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_reporte)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_usuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_reporte_grafica)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_arqueo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_reporte_venta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_cita)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_reporte_usuario)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_reporte_grafica
@@ -91,18 +91,18 @@
             this.label5.Text = "REPORTE \r\nGRAFICO ANUAL";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pbox_historia_clinica
+            // pbox_reporte_grafica
             // 
-            this.pbox_historia_clinica.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pbox_historia_clinica.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbox_historia_clinica.Image = ((System.Drawing.Image)(resources.GetObject("pbox_historia_clinica.Image")));
-            this.pbox_historia_clinica.Location = new System.Drawing.Point(464, 197);
-            this.pbox_historia_clinica.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbox_historia_clinica.Name = "pbox_historia_clinica";
-            this.pbox_historia_clinica.Size = new System.Drawing.Size(203, 168);
-            this.pbox_historia_clinica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbox_historia_clinica.TabIndex = 40;
-            this.pbox_historia_clinica.TabStop = false;
+            this.pbox_reporte_grafica.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pbox_reporte_grafica.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbox_reporte_grafica.Image = ((System.Drawing.Image)(resources.GetObject("pbox_reporte_grafica.Image")));
+            this.pbox_reporte_grafica.Location = new System.Drawing.Point(464, 197);
+            this.pbox_reporte_grafica.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbox_reporte_grafica.Name = "pbox_reporte_grafica";
+            this.pbox_reporte_grafica.Size = new System.Drawing.Size(203, 168);
+            this.pbox_reporte_grafica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbox_reporte_grafica.TabIndex = 40;
+            this.pbox_reporte_grafica.TabStop = false;
             // 
             // label4
             // 
@@ -132,6 +132,7 @@
             this.btn_reporte_venta.TabIndex = 38;
             this.btn_reporte_venta.Text = "INGRESAR";
             this.btn_reporte_venta.UseVisualStyleBackColor = false;
+            this.btn_reporte_venta.Click += new System.EventHandler(this.btn_reporte_venta_Click);
             // 
             // btn_punto_venta
             // 
@@ -165,19 +166,21 @@
             this.btn_arqueo.TabIndex = 36;
             this.btn_arqueo.Text = "INGRESAR";
             this.btn_arqueo.UseVisualStyleBackColor = false;
+            this.btn_arqueo.Click += new System.EventHandler(this.btn_arqueo_Click);
             // 
-            // pbox_reporte
+            // pbox_arqueo
             // 
-            this.pbox_reporte.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pbox_reporte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbox_reporte.Image = ((System.Drawing.Image)(resources.GetObject("pbox_reporte.Image")));
-            this.pbox_reporte.Location = new System.Drawing.Point(237, 197);
-            this.pbox_reporte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbox_reporte.Name = "pbox_reporte";
-            this.pbox_reporte.Size = new System.Drawing.Size(203, 168);
-            this.pbox_reporte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbox_reporte.TabIndex = 35;
-            this.pbox_reporte.TabStop = false;
+            this.pbox_arqueo.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pbox_arqueo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbox_arqueo.Image = ((System.Drawing.Image)(resources.GetObject("pbox_arqueo.Image")));
+            this.pbox_arqueo.Location = new System.Drawing.Point(237, 197);
+            this.pbox_arqueo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbox_arqueo.Name = "pbox_arqueo";
+            this.pbox_arqueo.Size = new System.Drawing.Size(203, 168);
+            this.pbox_arqueo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbox_arqueo.TabIndex = 35;
+            this.pbox_arqueo.TabStop = false;
+            this.pbox_arqueo.Click += new System.EventHandler(this.pbox_arqueo_Click);
             // 
             // label2
             // 
@@ -192,18 +195,19 @@
             this.label2.Text = "ARQUEO \r\nECONÓMICO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pbox_usuario
+            // pbox_reporte_venta
             // 
-            this.pbox_usuario.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pbox_usuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbox_usuario.Image = ((System.Drawing.Image)(resources.GetObject("pbox_usuario.Image")));
-            this.pbox_usuario.Location = new System.Drawing.Point(695, 197);
-            this.pbox_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbox_usuario.Name = "pbox_usuario";
-            this.pbox_usuario.Size = new System.Drawing.Size(203, 168);
-            this.pbox_usuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbox_usuario.TabIndex = 33;
-            this.pbox_usuario.TabStop = false;
+            this.pbox_reporte_venta.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pbox_reporte_venta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbox_reporte_venta.Image = ((System.Drawing.Image)(resources.GetObject("pbox_reporte_venta.Image")));
+            this.pbox_reporte_venta.Location = new System.Drawing.Point(695, 197);
+            this.pbox_reporte_venta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbox_reporte_venta.Name = "pbox_reporte_venta";
+            this.pbox_reporte_venta.Size = new System.Drawing.Size(203, 168);
+            this.pbox_reporte_venta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbox_reporte_venta.TabIndex = 33;
+            this.pbox_reporte_venta.TabStop = false;
+            this.pbox_reporte_venta.Click += new System.EventHandler(this.pbox_reporte_venta_Click);
             // 
             // label1
             // 
@@ -354,18 +358,19 @@
             this.label7.Text = "THE SWIFT TORTUGLE";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // pbox_reporte_usuario
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(926, 197);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 168);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 73;
-            this.pictureBox1.TabStop = false;
+            this.pbox_reporte_usuario.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pbox_reporte_usuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbox_reporte_usuario.Image = ((System.Drawing.Image)(resources.GetObject("pbox_reporte_usuario.Image")));
+            this.pbox_reporte_usuario.Location = new System.Drawing.Point(926, 197);
+            this.pbox_reporte_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbox_reporte_usuario.Name = "pbox_reporte_usuario";
+            this.pbox_reporte_usuario.Size = new System.Drawing.Size(203, 168);
+            this.pbox_reporte_usuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbox_reporte_usuario.TabIndex = 73;
+            this.pbox_reporte_usuario.TabStop = false;
+            this.pbox_reporte_usuario.Click += new System.EventHandler(this.pbox_reporte_usuario_Click);
             // 
             // btn_reporte_usuario
             // 
@@ -382,6 +387,7 @@
             this.btn_reporte_usuario.TabIndex = 74;
             this.btn_reporte_usuario.Text = "INGRESAR";
             this.btn_reporte_usuario.UseVisualStyleBackColor = false;
+            this.btn_reporte_usuario.Click += new System.EventHandler(this.btn_reporte_usuario_Click);
             // 
             // label8
             // 
@@ -404,7 +410,7 @@
             this.ClientSize = new System.Drawing.Size(1135, 480);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btn_reporte_usuario);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbox_reporte_usuario);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbl_usuario);
             this.Controls.Add(this.label6);
@@ -415,14 +421,14 @@
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_reporte_grafica);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.pbox_historia_clinica);
+            this.Controls.Add(this.pbox_reporte_grafica);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_reporte_venta);
             this.Controls.Add(this.btn_punto_venta);
             this.Controls.Add(this.btn_arqueo);
-            this.Controls.Add(this.pbox_reporte);
+            this.Controls.Add(this.pbox_arqueo);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pbox_usuario);
+            this.Controls.Add(this.pbox_reporte_venta);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_menu);
             this.Controls.Add(this.pbox_cita);
@@ -431,11 +437,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_historia_clinica)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_reporte)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_usuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_reporte_grafica)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_arqueo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_reporte_venta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_cita)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_reporte_usuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -445,14 +451,14 @@
 
         private System.Windows.Forms.Button btn_reporte_grafica;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pbox_historia_clinica;
+        private System.Windows.Forms.PictureBox pbox_reporte_grafica;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_reporte_venta;
         private System.Windows.Forms.Button btn_punto_venta;
         private System.Windows.Forms.Button btn_arqueo;
-        private System.Windows.Forms.PictureBox pbox_reporte;
+        private System.Windows.Forms.PictureBox pbox_arqueo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pbox_usuario;
+        private System.Windows.Forms.PictureBox pbox_reporte_venta;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pbox_cita;
         private System.Windows.Forms.Button btn_salir;
@@ -465,7 +471,7 @@
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label lbl_usuario;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbox_reporte_usuario;
         private System.Windows.Forms.Button btn_reporte_usuario;
         private System.Windows.Forms.Label label8;
     }

@@ -54,5 +54,59 @@ namespace EstaciondeServicio
             punto.Show();
             this.Hide();
         }
+
+        private void pbox_reporte_venta_Click(object sender, EventArgs e)
+        {
+            ReportedeVentas venta = new ReportedeVentas();
+            AddOwnedForm(venta);
+            venta.lbl_usuario.Text = this.lbl_usuario.Text;
+            venta.Show();
+            this.Hide();
+        }
+
+        private void btn_reporte_venta_Click(object sender, EventArgs e)
+        {
+            ReportedeVentas venta = new ReportedeVentas();
+            AddOwnedForm(venta);
+            venta.lbl_usuario.Text = this.lbl_usuario.Text;
+            venta.Show();
+            this.Hide();
+        }
+
+        private void pbox_arqueo_Click(object sender, EventArgs e)
+        {
+            ArqueoEconomico arqueo= new ArqueoEconomico();
+            AddOwnedForm(arqueo);
+            arqueo.lbl_usuario.Text = this.lbl_usuario.Text;
+            arqueo.Show();
+            this.Hide();
+        }
+
+        private void btn_arqueo_Click(object sender, EventArgs e)
+        {
+            ArqueoEconomico arqueo = new ArqueoEconomico();
+            AddOwnedForm(arqueo);
+            arqueo.lbl_usuario.Text = this.lbl_usuario.Text;
+            arqueo.Show();
+            this.Hide();
+        }
+
+        private void pbox_reporte_usuario_Click(object sender, EventArgs e)
+        {
+            Usuarios usuario = new Usuarios();
+            AddOwnedForm(usuario);
+            usuario.lbl_usuario.Text = this.lbl_usuario.Text;
+            usuario.Show();
+            this.Hide();
+        }
+
+        private void btn_reporte_usuario_Click(object sender, EventArgs e)
+        {
+            Usuarios usuario = new Usuarios();
+            AddOwnedForm(usuario);
+            usuario.lbl_usuario.Text = this.lbl_usuario.Text;
+            usuario.Show();
+            this.Hide();
+        }
     }
 }

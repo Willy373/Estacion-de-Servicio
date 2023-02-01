@@ -19,3 +19,7 @@ C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\bin\Debug\Microsoft.
 C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
 C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
 C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\obj\Debug\EstaciondeServicio.PuntodeVenta.resources
+C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\obj\Debug\EstaciondeServicio.ArqueoEconomico.resources
+C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\obj\Debug\EstaciondeServicio.ReportedeVentas.resources
+C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\obj\Debug\EstaciondeServicio.ReporteGraficaAnual.resources
+C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\obj\Debug\EstaciondeServicio.Usuarios.resources

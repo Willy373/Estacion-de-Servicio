@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArqueoEconomico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArqueoEconomico.Designer.cs">
+      <DependentUpon>ArqueoEconomico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,27 @@
     <Compile Include="PuntodeVenta.Designer.cs">
       <DependentUpon>PuntodeVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportedeVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportedeVentas.Designer.cs">
+      <DependentUpon>ReportedeVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteGraficaAnual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteGraficaAnual.Designer.cs">
+      <DependentUpon>ReporteGraficaAnual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ArqueoEconomico.resx">
+      <DependentUpon>ArqueoEconomico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +119,15 @@
     </Compile>
     <EmbeddedResource Include="PuntodeVenta.resx">
       <DependentUpon>PuntodeVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportedeVentas.resx">
+      <DependentUpon>ReportedeVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteGraficaAnual.resx">
+      <DependentUpon>ReporteGraficaAnual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
