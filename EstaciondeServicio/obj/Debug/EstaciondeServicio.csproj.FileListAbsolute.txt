@@ -23,3 +23,7 @@ C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\obj\Debug\Estacionde
 C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\obj\Debug\EstaciondeServicio.ReportedeVentas.resources
 C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\obj\Debug\EstaciondeServicio.ReporteGraficaAnual.resources
 C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\obj\Debug\EstaciondeServicio.Usuarios.resources
+C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\bin\Debug\itextsharp.dll
+C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\ASUS\Desktop\EstaciondeServicio\EstaciondeServicio\bin\Debug\itextsharp.xml

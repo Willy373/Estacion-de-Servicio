@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Title of the document</title>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                padding: 5px;
+                border: 1px solid black;
+            }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <td style="width:20%"></td>
+            <td style="width:60%" align="center" valign="top">
+                <table style="width:100%">
+                    <tr><td align="center">“THE SWIFT TORTUGLE”</td></tr>
+                    <tr><td align="center">ESTACIÓN DE SERVICIO</td></tr>
+                    <tr><td align="center"><h4 style="margin:0px">RECIBO</h4></td></tr>
+                </table>
+                
+            </td>
+        </tr>
+        
+        
+                
+
+
+        <tr><td colspan="3" height="20"></td></tr>
+        
+
+        <tr>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:20%">NIT:</td>
+                        <td colspan="3" style="width:80%">@NIT</td>
+                    </tr>
+                </table>
+            
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:20%">NRO RECIBO:</td>
+                        <td style="width:40%">@RECIBO</td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr><td colspan="3" height="30"></td></tr>
+
+        <tr>
+            <td style="width:10%"></td>
+            <td style="width:30%" align="" valign="top">
+                <table style="width:100%">
+                    <tr><td align="center">Venta al por menor de Combustible para</td></tr>
+                    <tr><td align="center">Automotores</td></tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr><td colspan="3" height="30"></td></tr>
+ 
+        
+        <tr>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:20%">Fecha:</td>
+                        <td colspan="3" style="width:60%">@FECHA</td>
+                        <td colspan="1" style="width:20%">Hora:</td>
+                        <td colspan="3" style="width:40%">@HORA</td>
+                    </tr>
+                </table>
+            
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:12%">NIT/CI:</td>
+                        <td style="width:40%">@CI</td>
+                    </tr>
+                </table>
+                
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:11%">Señor(es):</td>
+                        <td style="width:40%">@CLIENTE</td>
+                    </tr>
+                </table>
+                
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:20%">Placa:</td>
+                        <td colspan="3" style="width:60%">@PLACA</td>
+                        <td colspan="1" style="width:20%">Pais:</td>
+                        <td colspan="3" style="width:40%">Bolivia</td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr><td colspan="3" height="30"></td></tr>
+        
+        <tr>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:30%">Punto de Venta:</td>
+                        <td colspan="3" style="width:60%">@PUNTO</td>
+                    </tr>
+                </table>
+            
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:17%">Usuario:</td>
+                        <td style="width:40%">@USUARIO</td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr><td colspan="3" height="30"></td></tr>
+        
+        <tr>
+            <td colspan="3">
+                <table class="border" style="width:100%;">
+                    <thead>
+                        <tr style="background-color:#D8D8D8">
+                            <th>CANTIDAD</th>
+                            <th>DETALLE</th>
+                            <th>P. UNIT.</th>
+                            <th>SUBTOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@CANTIDAD</td>
+                            <td>@DETALLE</td>
+                            <td>@UNIT</td>
+                            <td>@SUBTOTAL</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 0px !important"></td>
+                            <td style="border: 0px !important"></td>
+                            <td align="right">TOTAL BS.</td>
+                            <td>@TOTAL</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        
+         <tr><td colspan="3" height="30"></td></tr>
+         
+          <tr>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:30%">SON: @VALOR 00/100 BOLIVIANOS</td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+        
+    </table>
+</body>
+</html>

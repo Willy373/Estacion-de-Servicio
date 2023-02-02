@@ -6,3 +6,7 @@ C:\Users\ASUS\Desktop\EstaciondeServicio\Datos\obj\Debug\Datos.dll
 C:\Users\ASUS\Desktop\EstaciondeServicio\Datos\obj\Debug\Datos.pdb
 C:\Users\ASUS\Desktop\EstaciondeServicio\Datos\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
 C:\Users\ASUS\Desktop\EstaciondeServicio\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\ASUS\Desktop\EstaciondeServicio\Datos\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ASUS\Desktop\EstaciondeServicio\Datos\bin\Debug\itextsharp.dll
+C:\Users\ASUS\Desktop\EstaciondeServicio\Datos\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\ASUS\Desktop\EstaciondeServicio\Datos\bin\Debug\itextsharp.xml

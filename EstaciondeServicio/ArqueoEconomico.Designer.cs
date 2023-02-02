@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArqueoEconomico));
             this.button1 = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
@@ -41,9 +43,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_num_servicio = new System.Windows.Forms.Label();
             this.lbl_menu = new System.Windows.Forms.Label();
-            this.dataGridViewArqueo = new System.Windows.Forms.DataGridView();
             this.btn_reporte = new System.Windows.Forms.Button();
             this.timerArqueoEconomico = new System.Windows.Forms.Timer(this.components);
+            this.dataGridViewArqueo = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArqueo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +56,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(-2, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(896, 39);
+            this.button1.Size = new System.Drawing.Size(999, 39);
             this.button1.TabIndex = 67;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -66,7 +68,7 @@
             this.btn_salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(891, 0);
+            this.btn_salir.Location = new System.Drawing.Point(996, 0);
             this.btn_salir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(47, 39);
@@ -80,9 +82,9 @@
             this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button2.Enabled = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(-2, 532);
+            this.button2.Location = new System.Drawing.Point(-15, 633);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(940, 39);
+            this.button2.Size = new System.Drawing.Size(1058, 39);
             this.button2.TabIndex = 69;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -92,7 +94,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(568, 541);
+            this.label3.Location = new System.Drawing.Point(701, 641);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 23);
             this.label3.TabIndex = 75;
@@ -105,7 +107,7 @@
             this.lbl_fechor_actual.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.lbl_fechor_actual.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_fechor_actual.ForeColor = System.Drawing.Color.Black;
-            this.lbl_fechor_actual.Location = new System.Drawing.Point(634, 541);
+            this.lbl_fechor_actual.Location = new System.Drawing.Point(775, 641);
             this.lbl_fechor_actual.Name = "lbl_fechor_actual";
             this.lbl_fechor_actual.Size = new System.Drawing.Size(38, 23);
             this.lbl_fechor_actual.TabIndex = 76;
@@ -118,7 +120,7 @@
             this.lbl_usuario.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.lbl_usuario.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_usuario.ForeColor = System.Drawing.Color.Black;
-            this.lbl_usuario.Location = new System.Drawing.Point(112, 542);
+            this.lbl_usuario.Location = new System.Drawing.Point(104, 642);
             this.lbl_usuario.Name = "lbl_usuario";
             this.lbl_usuario.Size = new System.Drawing.Size(38, 23);
             this.lbl_usuario.TabIndex = 77;
@@ -131,7 +133,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(27, 541);
+            this.label6.Location = new System.Drawing.Point(12, 641);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 23);
             this.label6.TabIndex = 78;
@@ -183,22 +185,12 @@
             this.lbl_menu.BackColor = System.Drawing.Color.Transparent;
             this.lbl_menu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lbl_menu.Font = new System.Drawing.Font("Cambria", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_menu.ForeColor = System.Drawing.Color.White;
-            this.lbl_menu.Location = new System.Drawing.Point(168, 42);
+            this.lbl_menu.ForeColor = System.Drawing.Color.Black;
+            this.lbl_menu.Location = new System.Drawing.Point(194, 42);
             this.lbl_menu.Name = "lbl_menu";
             this.lbl_menu.Size = new System.Drawing.Size(619, 70);
             this.lbl_menu.TabIndex = 85;
             this.lbl_menu.Text = "ARQUEO ECONOMICO";
-            // 
-            // dataGridViewArqueo
-            // 
-            this.dataGridViewArqueo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewArqueo.Location = new System.Drawing.Point(12, 115);
-            this.dataGridViewArqueo.Name = "dataGridViewArqueo";
-            this.dataGridViewArqueo.RowHeadersWidth = 51;
-            this.dataGridViewArqueo.RowTemplate.Height = 24;
-            this.dataGridViewArqueo.Size = new System.Drawing.Size(914, 351);
-            this.dataGridViewArqueo.TabIndex = 86;
             // 
             // btn_reporte
             // 
@@ -208,17 +200,57 @@
             this.btn_reporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reporte.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reporte.Location = new System.Drawing.Point(246, 474);
+            this.btn_reporte.Location = new System.Drawing.Point(251, 573);
             this.btn_reporte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_reporte.Name = "btn_reporte";
             this.btn_reporte.Size = new System.Drawing.Size(435, 44);
             this.btn_reporte.TabIndex = 95;
             this.btn_reporte.Text = "IMPRIMIR ARQUEO ECONOMICO";
             this.btn_reporte.UseVisualStyleBackColor = false;
+            this.btn_reporte.Click += new System.EventHandler(this.btn_reporte_Click);
             // 
             // timerArqueoEconomico
             // 
             this.timerArqueoEconomico.Tick += new System.EventHandler(this.timerArqueoEconomico_Tick);
+            // 
+            // dataGridViewArqueo
+            // 
+            this.dataGridViewArqueo.AllowUserToAddRows = false;
+            this.dataGridViewArqueo.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SkyBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(1);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewArqueo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewArqueo.ColumnHeadersHeight = 30;
+            this.dataGridViewArqueo.EnableHeadersVisualStyles = false;
+            this.dataGridViewArqueo.GridColor = System.Drawing.Color.DimGray;
+            this.dataGridViewArqueo.Location = new System.Drawing.Point(13, 116);
+            this.dataGridViewArqueo.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewArqueo.MultiSelect = false;
+            this.dataGridViewArqueo.Name = "dataGridViewArqueo";
+            this.dataGridViewArqueo.ReadOnly = true;
+            this.dataGridViewArqueo.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SkyBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewArqueo.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewArqueo.RowHeadersWidth = 51;
+            this.dataGridViewArqueo.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridViewArqueo.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
+            this.dataGridViewArqueo.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewArqueo.RowTemplate.Height = 30;
+            this.dataGridViewArqueo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewArqueo.Size = new System.Drawing.Size(1015, 451);
+            this.dataGridViewArqueo.TabIndex = 96;
             // 
             // ArqueoEconomico
             // 
@@ -226,9 +258,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(938, 572);
-            this.Controls.Add(this.btn_reporte);
+            this.ClientSize = new System.Drawing.Size(1041, 670);
             this.Controls.Add(this.dataGridViewArqueo);
+            this.Controls.Add(this.btn_reporte);
             this.Controls.Add(this.lbl_menu);
             this.Controls.Add(this.lbl_num_servicio);
             this.Controls.Add(this.label2);
@@ -264,8 +296,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_num_servicio;
         public System.Windows.Forms.Label lbl_menu;
-        private System.Windows.Forms.DataGridView dataGridViewArqueo;
         private System.Windows.Forms.Button btn_reporte;
         private System.Windows.Forms.Timer timerArqueoEconomico;
+        private System.Windows.Forms.DataGridView dataGridViewArqueo;
     }
 }

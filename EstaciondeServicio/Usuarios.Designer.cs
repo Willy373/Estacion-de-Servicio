@@ -60,7 +60,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(881, 39);
+            this.button1.Size = new System.Drawing.Size(1062, 39);
             this.button1.TabIndex = 80;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -72,7 +72,7 @@
             this.btn_salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(882, 0);
+            this.btn_salir.Location = new System.Drawing.Point(1054, 0);
             this.btn_salir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(47, 39);
@@ -86,9 +86,9 @@
             this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button2.Enabled = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 538);
+            this.button2.Location = new System.Drawing.Point(0, 606);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(929, 39);
+            this.button2.Size = new System.Drawing.Size(1101, 39);
             this.button2.TabIndex = 82;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -98,7 +98,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(594, 548);
+            this.label3.Location = new System.Drawing.Point(768, 613);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 23);
             this.label3.TabIndex = 83;
@@ -111,7 +111,7 @@
             this.lbl_fechor_actual.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.lbl_fechor_actual.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_fechor_actual.ForeColor = System.Drawing.Color.Black;
-            this.lbl_fechor_actual.Location = new System.Drawing.Point(662, 548);
+            this.lbl_fechor_actual.Location = new System.Drawing.Point(839, 613);
             this.lbl_fechor_actual.Name = "lbl_fechor_actual";
             this.lbl_fechor_actual.Size = new System.Drawing.Size(38, 23);
             this.lbl_fechor_actual.TabIndex = 84;
@@ -124,7 +124,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(13, 547);
+            this.label6.Location = new System.Drawing.Point(12, 613);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 23);
             this.label6.TabIndex = 85;
@@ -137,7 +137,7 @@
             this.lbl_usuario.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.lbl_usuario.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_usuario.ForeColor = System.Drawing.Color.Black;
-            this.lbl_usuario.Location = new System.Drawing.Point(98, 548);
+            this.lbl_usuario.Location = new System.Drawing.Point(102, 613);
             this.lbl_usuario.Name = "lbl_usuario";
             this.lbl_usuario.Size = new System.Drawing.Size(38, 23);
             this.lbl_usuario.TabIndex = 86;
@@ -164,7 +164,7 @@
             this.lbl_menu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lbl_menu.Font = new System.Drawing.Font("Cambria", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_menu.ForeColor = System.Drawing.Color.Black;
-            this.lbl_menu.Location = new System.Drawing.Point(313, 42);
+            this.lbl_menu.Location = new System.Drawing.Point(403, 42);
             this.lbl_menu.Name = "lbl_menu";
             this.lbl_menu.Size = new System.Drawing.Size(313, 70);
             this.lbl_menu.TabIndex = 88;
@@ -177,7 +177,7 @@
             this.dataGridViewUsuarios.Name = "dataGridViewUsuarios";
             this.dataGridViewUsuarios.RowHeadersWidth = 51;
             this.dataGridViewUsuarios.RowTemplate.Height = 24;
-            this.dataGridViewUsuarios.Size = new System.Drawing.Size(560, 344);
+            this.dataGridViewUsuarios.Size = new System.Drawing.Size(1072, 344);
             this.dataGridViewUsuarios.TabIndex = 89;
             this.dataGridViewUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUsuarios_CellClick);
             // 
@@ -186,7 +186,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(583, 237);
+            this.label2.Location = new System.Drawing.Point(37, 502);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 26);
             this.label2.TabIndex = 90;
@@ -197,7 +197,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(583, 290);
+            this.label4.Location = new System.Drawing.Point(37, 549);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(138, 26);
             this.label4.TabIndex = 91;
@@ -208,7 +208,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(584, 405);
+            this.label5.Location = new System.Drawing.Point(425, 502);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 26);
             this.label5.TabIndex = 92;
@@ -219,7 +219,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(583, 351);
+            this.label7.Location = new System.Drawing.Point(425, 549);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(154, 26);
             this.label7.TabIndex = 93;
@@ -233,10 +233,10 @@
             this.btn_actualizar_usuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_actualizar_usuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_actualizar_usuario.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_actualizar_usuario.Location = new System.Drawing.Point(288, 478);
+            this.btn_actualizar_usuario.Location = new System.Drawing.Point(794, 515);
             this.btn_actualizar_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_actualizar_usuario.Name = "btn_actualizar_usuario";
-            this.btn_actualizar_usuario.Size = new System.Drawing.Size(371, 44);
+            this.btn_actualizar_usuario.Size = new System.Drawing.Size(268, 44);
             this.btn_actualizar_usuario.TabIndex = 96;
             this.btn_actualizar_usuario.Text = "ACTUALIZAR USUARIO";
             this.btn_actualizar_usuario.UseVisualStyleBackColor = false;
@@ -257,7 +257,7 @@
             "3",
             "4",
             "5"});
-            this.combo_estacion.Location = new System.Drawing.Point(732, 348);
+            this.combo_estacion.Location = new System.Drawing.Point(581, 546);
             this.combo_estacion.Name = "combo_estacion";
             this.combo_estacion.Size = new System.Drawing.Size(181, 34);
             this.combo_estacion.TabIndex = 101;
@@ -267,7 +267,7 @@
             // 
             this.txt_nom_usuario.Enabled = false;
             this.txt_nom_usuario.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nom_usuario.Location = new System.Drawing.Point(732, 234);
+            this.txt_nom_usuario.Location = new System.Drawing.Point(171, 494);
             this.txt_nom_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_nom_usuario.Name = "txt_nom_usuario";
             this.txt_nom_usuario.Size = new System.Drawing.Size(182, 34);
@@ -277,7 +277,7 @@
             // 
             this.txt_contraseña.Enabled = false;
             this.txt_contraseña.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_contraseña.Location = new System.Drawing.Point(733, 287);
+            this.txt_contraseña.Location = new System.Drawing.Point(171, 546);
             this.txt_contraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_contraseña.Name = "txt_contraseña";
             this.txt_contraseña.Size = new System.Drawing.Size(182, 34);
@@ -287,7 +287,7 @@
             // 
             this.txt_combustible.Enabled = false;
             this.txt_combustible.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_combustible.Location = new System.Drawing.Point(732, 402);
+            this.txt_combustible.Location = new System.Drawing.Point(580, 494);
             this.txt_combustible.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_combustible.Name = "txt_combustible";
             this.txt_combustible.Size = new System.Drawing.Size(182, 34);
@@ -300,7 +300,7 @@
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(930, 578);
+            this.ClientSize = new System.Drawing.Size(1101, 644);
             this.Controls.Add(this.txt_combustible);
             this.Controls.Add(this.txt_contraseña);
             this.Controls.Add(this.txt_nom_usuario);

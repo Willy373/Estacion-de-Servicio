@@ -30,6 +30,15 @@ namespace EstaciondeServicio
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
             timerMenuPrincipal.Enabled = true;
+            if(lbl_usuario.Text != "admin")
+            {
+                btn_reporte_venta.Enabled = false;
+                btn_reporte_usuario.Enabled = false;
+                btn_reporte_grafica.Enabled = false;
+                pbox_reporte_venta.Enabled = false;
+                pbox_reporte_usuario.Enabled = false;
+                pbox_reporte_grafica.Enabled = false;
+            }
         }
 
         private void timerMenuPrincipal_Tick(object sender, EventArgs e)
@@ -106,6 +115,15 @@ namespace EstaciondeServicio
             AddOwnedForm(usuario);
             usuario.lbl_usuario.Text = this.lbl_usuario.Text;
             usuario.Show();
+            this.Hide();
+        }
+
+        private void pbox_reporte_grafica_Click(object sender, EventArgs e)
+        {
+            ReporteGraficaAnual grafica= new ReporteGraficaAnual();
+            AddOwnedForm(grafica);
+            grafica.lbl_usuario.Text = this.lbl_usuario.Text;
+            grafica.Show();
             this.Hide();
         }
     }

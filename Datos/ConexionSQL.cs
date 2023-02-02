@@ -225,5 +225,172 @@ namespace Datos
             }
             return tabla;
         }
+
+
+
+        public DataTable Clientes()
+        {
+            conexion.Open();
+            string query = "SELECT c.id_cliente as Nro, c.ci_cliente, c.placa_cliente, c.nombre_cliente, c.ap_paterno_cliente, c.ap_materno_cliente FROM EstaciondeServicio.dbo.cliente c";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            conexion.Close();
+            return tabla;
+        }
+
+
+        public DataTable BuscarCliente(string placa)
+        {
+            conexion.Open();
+            string query = "SELECT c.id_cliente as Nro, c.ci_cliente, c.placa_cliente, c.nombre_cliente, c.ap_paterno_cliente, c.ap_materno_cliente FROM EstaciondeServicio.dbo.cliente c where c.placa_cliente = '" + placa+ "'";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            conexion.Close();
+            return tabla;
+        }
+
+        public string ValorCombustible(string usuario)
+        {
+            string valorcombus = "";
+            conexion.Open();
+            string query = "SELECT e.costo_combustible FROM EstaciondeServicio.dbo.usuario u inner join EstaciondeServicio.dbo.estacion e on u.id_estacion = e.id_estacion where u.nombre_usuario = '" + usuario + "'";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            SqlDataReader reader = null;
+            reader = cmd.ExecuteReader();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    valorcombus = reader.GetValue(0).ToString();
+                }
+            }
+            conexion.Close();
+            return valorcombus;
+        }
+
+
+        public string MaxGasolina()
+        {
+            string valorcombus = "";
+            conexion.Open();
+            string query = "SELECT sum(h.cantidad_combustible) FROM EstaciondeServicio.dbo.historial_estacion h inner join EstaciondeServicio.dbo.estacion e on h.id_estacion = e.id_estacion where e.combustible_servicio = 'GASOLINA'";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            SqlDataReader reader = null;
+            reader = cmd.ExecuteReader();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    valorcombus = reader.GetValue(0).ToString();
+                }
+            }
+            conexion.Close();
+            return valorcombus;
+        }
+
+
+        public string MaxDiesel()
+        {
+            string valorcombus = "";
+            conexion.Open();
+            string query = "SELECT sum(h.cantidad_combustible) FROM EstaciondeServicio.dbo.historial_estacion h inner join EstaciondeServicio.dbo.estacion e on h.id_estacion = e.id_estacion where e.combustible_servicio = 'DIESEL'";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            SqlDataReader reader = null;
+            reader = cmd.ExecuteReader();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    valorcombus = reader.GetValue(0).ToString();
+                }
+            }
+            conexion.Close();
+            return valorcombus;
+        }
+
+
+        public string idUsuario(string usuario)
+        {
+            string idusu = "";
+            conexion.Open();
+            string query = "SELECT u.id_usuario FROM EstaciondeServicio.dbo.usuario u WHERE u.nombre_usuario = '"+usuario+"'";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            SqlDataReader reader = null;
+            reader = cmd.ExecuteReader();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    idusu = reader.GetValue(0).ToString();
+                }
+            }
+            conexion.Close();
+            return idusu;
+        }
+
+
+        public string idCliente(string placa)
+        {
+            string idcli = "";
+            conexion.Open();
+            string query = "SELECT c.id_cliente FROM EstaciondeServicio.dbo.cliente c WHERE c.placa_cliente = '"+placa+"'";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            SqlDataReader reader = null;
+            reader = cmd.ExecuteReader();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    idcli = reader.GetValue(0).ToString();
+                }
+            }
+            conexion.Close();
+            return idcli;
+        }
+        
+        public int ActualizarCombustible(double combustible, int num_servicio)
+        {
+            int verificar = 0;
+            conexion.Open();
+            string query = "UPDATE EstaciondeServicio.dbo.estacion SET combustible_disponible= "+combustible+" WHERE numero_servicio= "+num_servicio+"";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            verificar = cmd.ExecuteNonQuery();
+            conexion.Close();
+            return verificar;
+        }
+
+
+        public int InsertarHistorial(int id_usuario, int id_cliente, int id_estacion , double cantidad_combustible, double total_bs)
+        {
+            int verificar = 0;
+            conexion.Open();
+            string query = "INSERT INTO EstaciondeServicio.dbo.historial_estacion (id_usuario, id_cliente, id_estacion, cantidad_combustible, total_bolivianos) VALUES('"+id_usuario+"','"+id_cliente+"','"+id_estacion+"','"+ cantidad_combustible + "',"+total_bs+")";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            verificar = cmd.ExecuteNonQuery();
+            conexion.Close();
+            return verificar;
+        }
+
+
+        public int LlenarCombustible(double limiteCombustible, int estacion)
+        {
+            int verificar = 0;
+            conexion.Open();
+            string query = "UPDATE EstaciondeServicio.dbo.estacion SET combustible_disponible= " + limiteCombustible + " WHERE numero_servicio= " + estacion + "";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            verificar = cmd.ExecuteNonQuery();
+            conexion.Close();
+            return verificar;
+        }
+
+
+
+
+
+
     }
 }

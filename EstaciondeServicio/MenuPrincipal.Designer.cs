@@ -103,6 +103,7 @@
             this.pbox_reporte_grafica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbox_reporte_grafica.TabIndex = 40;
             this.pbox_reporte_grafica.TabStop = false;
+            this.pbox_reporte_grafica.Click += new System.EventHandler(this.pbox_reporte_grafica_Click);
             // 
             // label4
             // 

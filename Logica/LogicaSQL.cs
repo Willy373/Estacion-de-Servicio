@@ -63,5 +63,59 @@ namespace Logica
         {
             return conDatos.VentaSeleccionada(usuario, mes);
         }
+
+        public DataTable consultaClientes()
+        {
+            return conDatos.Clientes();
+        }
+
+        public DataTable consultaBuscarCliente(string placa)
+        {
+            return conDatos.BuscarCliente(placa);
+        }
+
+        public string consultaValorCombustible(string usuario)
+        {
+            return conDatos.ValorCombustible(usuario);
+        }
+
+        public string consultaMaxGasolina()
+        {
+            return conDatos.MaxGasolina();
+        }
+
+        public string consultaMaxDiesel()
+        {
+            return conDatos.MaxDiesel();
+        }
+
+        public string consultaIdUsuario(string usuario)
+        {
+            return conDatos.idUsuario(usuario);
+        }
+
+        public string consultaIdCliente(string placa)
+        {
+            return conDatos.idCliente(placa);
+        }
+
+        public int consultaActCombustible(double combus, int num_serv)
+        {
+            return conDatos.ActualizarCombustible(combus, num_serv);
+        }
+
+        public int consultaInsertarHistorial(int id_usuario, int id_cliente, int id_estacion, double Cantidad_combustible, double total_bs)
+        {
+            return conDatos.InsertarHistorial(id_usuario, id_cliente, id_estacion, Cantidad_combustible, total_bs);
+        }
+
+        public int consultaLLenarCombustible(double limiteCombustible, int estacion)
+        {
+            return conDatos.LlenarCombustible(limiteCombustible, estacion);
+        }
+
+
+
+
     }
 }

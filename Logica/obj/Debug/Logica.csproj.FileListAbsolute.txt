@@ -8,3 +8,7 @@ C:\Users\ASUS\Desktop\EstaciondeServicio\Logica\obj\Debug\Logica.csproj.CopyComp
 C:\Users\ASUS\Desktop\EstaciondeServicio\Logica\obj\Debug\Logica.dll
 C:\Users\ASUS\Desktop\EstaciondeServicio\Logica\obj\Debug\Logica.pdb
 C:\Users\ASUS\Desktop\EstaciondeServicio\Logica\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\ASUS\Desktop\EstaciondeServicio\Logica\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ASUS\Desktop\EstaciondeServicio\Logica\bin\Debug\itextsharp.dll
+C:\Users\ASUS\Desktop\EstaciondeServicio\Logica\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\ASUS\Desktop\EstaciondeServicio\Logica\bin\Debug\itextsharp.xml
